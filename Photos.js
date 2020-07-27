@@ -4,6 +4,19 @@ import Footer from './footer';
 
 
 export default class Photos extends Component {
+    constructor() {
+        super()
+        this.state = {
+            view: "flase"
+        }
+    }
+    modal = () => {
+        console.log("This was clicked!")
+        this.setState ({
+            view: "true"
+        })
+    }
+
     render() {
         return (
             <div>
@@ -16,7 +29,7 @@ export default class Photos extends Component {
                     </div>
                     <div className='photos-container'>
 
-                        <img className="kitchen" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80" />
+                        <img className={this.state.view === "true" ? "modal" : "kitchen"} onClick={this.modal} src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80" />
 
                         <img className="bedroom" src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2239&q=80" />
 

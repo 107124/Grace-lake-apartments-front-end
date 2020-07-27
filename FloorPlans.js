@@ -4,7 +4,7 @@ import Footer from './footer';
 
 import Room1 from "../images/room1.png";
 import Room2 from "../images/room2.png";
-import Room3 from "../images/room3.png";
+// import Room3 from "../images/room3.png";
 import Room4 from "../images/room4.png";
 import Room5 from "../images/room5.png";
 import Room6 from "../images/room6.png";
@@ -128,7 +128,7 @@ export default class FloorPlans extends Component {
                         </div>
                     </div>
                 </div>
-        <Footer />
+                <Footer />
 
             </div>
         );
