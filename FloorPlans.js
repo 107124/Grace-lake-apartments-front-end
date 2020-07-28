@@ -43,18 +43,7 @@ export default class FloorPlans extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="floor-plan-card-container">
-                        <div className="floor-plan-card room3">
-                            <img src={Room3} alt="image" />
-                            <div className="card-text">
 
-                                <h1>Bridgeview</h1>
-                                <h3>1 Bed</h3>
-                                <h3>1 Bath</h3>
-                                <h3>$800/month</h3>
-                            </div>
-                        </div>
-                    </div>
                     <div className="floor-plan-card-container">
                         <div className="floor-plan-card room4">
                             <img src={Room4} alt="image" />
